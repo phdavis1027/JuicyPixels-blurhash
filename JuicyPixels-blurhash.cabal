@@ -48,7 +48,7 @@ library
   build-depends:
       JuicyPixels >=3.2.8 && <3.4
     , base >=4.7 && <5
-    , bytestring >=0.9 && <0.11
+    , bytestring >=0.11
     , containers >=0.4.2 && <0.7
     , filepath >=1.4.1.1 && <1.5
     , vector >=0.10 && <0.13
@@ -65,7 +65,7 @@ executable JuicyPixels-blurhash-exe
       JuicyPixels >=3.2.8 && <3.4
     , JuicyPixels-blurhash
     , base >=4.7 && <5
-    , bytestring >=0.9 && <0.11
+    , bytestring >=0.11
     , containers >=0.4.2 && <0.7
     , filepath >=1.4.1.1 && <1.5
     , optparse-applicative >=0.14.3 && <0.18
@@ -85,9 +85,9 @@ test-suite JuicyPixels-blurhash-doctests
     , JuicyPixels >=3.2.8 && <3.4
     , JuicyPixels-blurhash
     , base >=4.7 && <5
-    , bytestring >=0.9 && <0.11
+    , bytestring >=0.11
     , containers >=0.4.2 && <0.7
-    , doctest >=0.16.2 && <0.20
+    , doctest >=0.22
     , filepath >=1.4.1.1 && <1.5
     , vector >=0.10 && <0.13
   default-language: Haskell2010
@@ -102,14 +102,15 @@ test-suite JuicyPixels-blurhash-test
       JuicyPixels >=3.2.8 && <3.4
     , JuicyPixels-blurhash
     , base >=4.7 && <5
-    , bytestring >=0.9 && <0.11
+    , bytestring >=0.11
     , containers >=0.4.2 && <0.7
     , filepath >=1.4.1.1 && <1.5
-    , hedgehog >=1.0.2 && <1.2
+    , hedgehog >=1.4
     , tasty >=1.2.3 && <1.5
-    , tasty-discover >=4.2.1 && <4.3
-    , tasty-hedgehog >=1.0.0.2 && <1.2
+    , tasty-hedgehog >=1.4
     , tasty-hunit >=0.10.0.2 && <0.11
     , vector >=0.10 && <0.13
+  build-tool-depends:
+    tasty-discover:tasty-discover >=4.2 && <4.3
   default-language: Haskell2010
   other-modules: Blurhash

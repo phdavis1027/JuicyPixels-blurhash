@@ -20,7 +20,7 @@ toDList l = \l' -> l ++ l'
 
 -- | Convert a difference list to a list
 dListToList :: DList a -> [a]
-dListToList = ($[])
+dListToList = ($ [])
 
 -- | Append an item to the end of a difference list
 dListSnoc :: DList a -> a -> DList a
