@@ -51,7 +51,7 @@ library
     , bytestring >=0.11
     , containers >=0.4.2 && <0.7
     , filepath >=1.4.1.1 && <1.5
-    , vector >=0.10 && <0.13
+    , vector >=0.10 && <=0.14
   default-language: Haskell2010
 
 executable JuicyPixels-blurhash-exe
